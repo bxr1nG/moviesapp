@@ -41,7 +41,8 @@ function App() {
 			<header className='header'>
 				<div className='logo-container'>
 					<img className='logo' src='logo.svg' />
-					<h1>MoviesApp</h1>
+					<h1 className='logo-desktop'>MoviesApp</h1>
+					<h1 className='logo-mobile'>MA</h1>
 				</div>
 				<form onSubmit={handleOnSubmit}>
 					<input

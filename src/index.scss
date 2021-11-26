@@ -89,6 +89,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .logo-container {
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 }
 
@@ -96,6 +97,22 @@ body::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(0.25turn, #8fcea1, #03b4e4);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+@media (max-width: 520px) {
+	.logo-mobile {
+		display: block;
+	}
+	.logo-desktop {
+		display: none;
+	}
+	.header input {
+		width: 150px;
+	}
 }
 
 .logo {
